@@ -1,0 +1,151 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.accounts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.accountCard {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.accountLabel {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.accountValue {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: var(--font-mono);
+}
+
+.profitUp {
+  color: var(--accent-red);
+}
+
+.profitDown {
+  color: var(--accent-green-light);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: var(--space-lg);
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.transactions {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.transactions h3 {
+  font-size: 16px;
+  padding: var(--space-md);
+  border-bottom: 1px solid var(--border);
+}
+
+.transactionList {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.transaction {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}
+
+.transaction:last-child {
+  border-bottom: none;
+}
+
+.txType {
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.txType.buy {
+  background-color: rgba(248, 81, 73, 0.2);
+  color: var(--accent-red);
+}
+
+.txType.sell {
+  background-color: rgba(35, 134, 54, 0.2);
+  color: var(--accent-green-light);
+}
+
+.txCode {
+  font-family: var(--font-mono);
+  font-weight: 500;
+}
+
+.txQuantity {
+  color: var(--text-secondary);
+  flex: 1;
+}
+
+.txPrice {
+  font-family: var(--font-mono);
+}
+
+.emptyTx {
+  padding: var(--space-xl);
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 1024px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+
+  .accounts {
+    grid-template-columns: 1fr;
+  }
+}

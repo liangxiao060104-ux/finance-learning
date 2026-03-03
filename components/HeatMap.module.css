@@ -1,0 +1,67 @@
+.container {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+}
+
+.grid {
+  display: flex;
+  gap: 3px;
+  overflow-x: auto;
+  padding-bottom: var(--space-sm);
+}
+
+.week {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.day {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  background-color: var(--bg-tertiary);
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.day:hover {
+  transform: scale(1.2);
+  outline: 1px solid var(--text-secondary);
+}
+
+.level0 {
+  background-color: var(--bg-tertiary);
+}
+
+.level1 {
+  background-color: #0e4429;
+}
+
+.level2 {
+  background-color: #006d32;
+}
+
+.level3 {
+  background-color: #26a641;
+}
+
+.level4 {
+  background-color: #39d353;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: var(--space-md);
+  justify-content: flex-end;
+}
+
+.legendLabel {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin: 0 var(--space-xs);
+}
