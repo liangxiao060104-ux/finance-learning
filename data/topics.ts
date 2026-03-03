@@ -554,9 +554,9 @@ YTM = (利息 + (面值-价格)/年数) / ((面值+价格)/2)`
     description: '掌握资产配置与风险管理',
     icon: '🎯',
     prevTopic: 'analysis',
-    nextTopic: null,
+    nextTopic: 'microeconomics',
     prevRelation: '分析能力是理财规划的基础',
-    nextRelation: '',
+    nextRelation: '个人决策涉及微观经济学原理',
     content: '理财规划是根据个人目标进行的系统性财富安排。',
     sections: [
       {
@@ -645,6 +645,180 @@ YTM = (利息 + (面值-价格)/年数) / ((面值+价格)/2)`
         options: ['正确', '错误'],
         answer: 1,
         explanation: '应该先给家庭经济支柱购买保险。'
+      }
+    ]
+  },
+  {
+    id: 'microeconomics',
+    title: '微观经济学',
+    description: '研究个体经济行为与市场机制',
+    icon: '🔬',
+    prevTopic: 'planning',
+    nextTopic: 'macroeconomics',
+    prevRelation: '理财规划涉及个人决策',
+    nextRelation: '微观是宏观的基础',
+    content: '微观经济学研究单个经济主体的行为，包括消费者、企业和市场如何做出决策。',
+    sections: [
+      {
+        title: '需求与供给',
+        content: '需求定律：价格下降，需求量增加。供给定律：价格上升，供给量增加。\n\n均衡价格：供给等于需求时的价格。\n\n弹性：需求量对价格变动的敏感程度。'
+      },
+      {
+        title: '消费者行为',
+        content: '效用：消费商品获得的满足感。\n\n边际效用：每增加一单位商品带来的效用增加。\n\n消费者均衡：花费在各商品上的最后一元带来的边际效用相等。'
+      },
+      {
+        title: '生产成本',
+        content: '固定成本：不随产量变化的成本。\n\n可变成本：随产量变化的成本。\n\n边际成本：每增加一单位产出带来的成本增加。'
+      }
+    ],
+    terms: [
+      { term: '需求定律', definition: '价格与需求量呈反向变动' },
+      { term: '供给定律', definition: '价格与供给量呈同向变动' },
+      { term: '均衡价格', definition: '供给等于需求时的价格' },
+      { term: '边际效用', definition: '最后一单位商品的效用' },
+      { term: '机会成本', definition: '选择某一方案放弃的收益' }
+    ],
+    quiz: [
+      {
+        id: 'micro-1',
+        type: 'single',
+        question: '需求定律说明什么？',
+        options: ['价格上升，需求量上升', '价格下降，需求量上升', '价格不变，需求量变化', '需求量决定价格'],
+        answer: 1,
+        explanation: '需求定律：商品价格下降，需求量增加；价格上升，需求量减少。'
+      },
+      {
+        id: 'micro-2',
+        type: 'single',
+        question: '均衡价格是什么？',
+        options: ['最高价', '最低价', '供给等于需求时的价格', '成本价'],
+        answer: 2,
+        explanation: '均衡价格是供给曲线和需求曲线相交点的价格，此时供给量等于需求量。'
+      },
+      {
+        id: 'micro-3',
+        type: 'truefalse',
+        question: '边际效用递减是指效用越来越少。',
+        options: ['正确', '错误'],
+        answer: 1,
+        explanation: '边际效用递减是指随着消费数量增加，每增加一单位商品带来的效用增加量递减，但总效用仍在增加。'
+      }
+    ]
+  },
+  {
+    id: 'macroeconomics',
+    title: '宏观经济学',
+    description: '研究整体经济运行与政府政策',
+    icon: '🌐',
+    prevTopic: 'microeconomics',
+    nextTopic: 'international-trade',
+    prevRelation: '微观是宏观的基础',
+    nextRelation: '国际贸易涉及宏观经济',
+    content: '宏观经济学研究整个经济体的运行，包括国民收入、失业、通货膨胀和经济增长等。',
+    sections: [
+      {
+        title: '国内生产总值(GDP)',
+        content: 'GDP：一定时期内一国生产的全部最终产品和服务的市场价值。\n\nGDP核算方法：支出法、收入法、生产法。\n\nGDP平减指数：名义GDP与实际GDP的比值，反映通货膨胀。'
+      },
+      {
+        title: '通货膨胀',
+        content: '通货膨胀：物价水平持续上涨。\n\nCPI消费者物价指数：反映居民生活成本变化的指标。\n\n菲里普斯曲线：通货膨胀与失业率之间的反向关系。'
+      },
+      {
+        title: '货币政策与财政政策',
+        content: '货币政策：央行控制货币供应量的政策工具。\n\n财政政策：政府调整支出和税收的政策。\n\n挤出效应：财政扩张导致私人投资减少。'
+      }
+    ],
+    terms: [
+      { term: 'GDP', definition: '国内生产总值' },
+      { term: 'CPI', definition: '消费者物价指数' },
+      { term: '通货膨胀', definition: '物价持续上涨' },
+      { term: '货币政策', definition: '央行调控货币供应量' },
+      { term: '财政政策', definition: '政府调整收支政策' }
+    ],
+    quiz: [
+      {
+        id: 'macro-1',
+        type: 'single',
+        question: 'GDP的定义是什么？',
+        options: ['所有商品的价值', '一国生产的最终产品市场价值', '国民总收入', '企业利润'],
+        answer: 1,
+        explanation: 'GDP是一定时期内一国生产的全部最终产品和服务的市场价值。'
+      },
+      {
+        id: 'macro-2',
+        type: 'single',
+        question: 'CPI衡量什么？',
+        options: ['经济增长', '失业率', '居民生活成本变化', '货币供应量'],
+        answer: 2,
+        explanation: 'CPI消费者物价指数衡量居民生活成本的变化，反映通货膨胀水平。'
+      },
+      {
+        id: 'macro-3',
+        type: 'truefalse',
+        question: '扩张性财政政策会导致物价上涨。',
+        options: ['正确', '错误'],
+        answer: 0,
+        explanation: '扩张性财政政策增加政府支出，会导致总需求增加，可能引发通货膨胀。'
+      }
+    ]
+  },
+  {
+    id: 'international-trade',
+    title: '国际贸易学',
+    description: '研究国家间商品与服务交换规律',
+    icon: '🚢',
+    prevTopic: 'macroeconomics',
+    nextTopic: null,
+    prevRelation: '国际贸易属于宏观经济范畴',
+    nextRelation: '',
+    content: '国际贸易学研究国家间商品和服务的交换，包括贸易理论、政策和汇率等。',
+    sections: [
+      {
+        title: '比较优势理论',
+        content: '绝对优势：一国生产某商品的效率高于他国。\n\n比较优势：一国生产某产品的机会成本低于他国。\n\n即使没有绝对优势，通过比较优势贸易仍可获利。'
+      },
+      {
+        title: '贸易保护主义',
+        content: '关税：进口商品征收的税费。\n\n配额：进口商品的数量限制。\n\n补贴：对本国出口商的财政支持。\n\n贸易壁垒的目的：保护本国产业、就业和国家安全。'
+      },
+      {
+        title: '汇率与汇率制度',
+        content: '汇率：两种货币之间的比价。\n\n固定汇率：央行维持汇率稳定。\n\n浮动汇率：由市场供求决定。\n\n汇率变动影响进出口贸易和资本流动。'
+      }
+    ],
+    terms: [
+      { term: '比较优势', definition: '机会成本最低的优势' },
+      { term: '关税', definition: '进口商品的税费' },
+      { term: '汇率', definition: '两种货币的比价' },
+      { term: '贸易顺差', definition: '出口大于进口' },
+      { term: '贸易逆差', definition: '进口大于出口' }
+    ],
+    quiz: [
+      {
+        id: 'trade-1',
+        type: 'single',
+        question: '比较优势理论由谁提出？',
+        options: ['亚当斯密', '大卫李嘉图', '凯恩斯', '马克思'],
+        answer: 1,
+        explanation: '比较优势理论由大卫·李嘉图在19世纪提出，是自由贸易理论的基础。'
+      },
+      {
+        id: 'trade-2',
+        type: 'single',
+        question: '关税属于什么政策？',
+        options: ['货币政策', '贸易保护主义', '财政政策', '产业政策'],
+        answer: 1,
+        explanation: '关税是贸易保护主义政策的一种，用来提高进口商品价格，保护本国产业。'
+      },
+      {
+        id: 'trade-3',
+        type: 'truefalse',
+        question: '本币升值有利于出口。',
+        options: ['正确', '错误'],
+        answer: 1,
+        explanation: '本币升值会使本国商品在国际市场上价格升高，不利于出口，但有利于进口。'
       }
     ]
   }

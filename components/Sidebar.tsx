@@ -13,6 +13,9 @@ const sidebarLinks = [
   { href: '/learn/fund', label: '基金投资', icon: '💼' },
   { href: '/learn/analysis', label: '市场分析', icon: '🔍' },
   { href: '/learn/planning', label: '理财规划', icon: '🎯' },
+  { href: '/learn/microeconomics', label: '微观经济学', icon: '🔬' },
+  { href: '/learn/macroeconomics', label: '宏观经济学', icon: '🌐' },
+  { href: '/learn/international-trade', label: '国际贸易学', icon: '🚢' },
 ]
 
 export default function Sidebar() {
