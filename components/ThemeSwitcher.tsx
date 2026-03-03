@@ -6,8 +6,6 @@ import styles from './ThemeSwitcher.module.css'
 const themes = [
   { id: 'dark', name: '深色', icon: '🌙', color: '#0d1117' },
   { id: 'light', name: '浅色', icon: '☀️', color: '#ffffff' },
-  { id: 'blue', name: '蓝色', icon: '🔵', color: '#1f6feb' },
-  { id: 'green', name: '绿色', icon: '🟢', color: '#238636' },
 ] as const
 
 export default function ThemeSwitcher() {
